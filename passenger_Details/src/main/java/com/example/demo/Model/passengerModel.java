@@ -10,54 +10,54 @@ import jakarta.persistence.Table;
 public class passengerModel {
 	@Id
 	@GeneratedValue
-	public int passenger_Id;
-	public String passenger_Name;
-	public String passenger_Native;
-	public String passenger_Departure;
-	public String passenger_Arrival;
-	public int passenger_Age;
-	public String passenger_Gender;
-	public int getPassenger_Id() {
-		return passenger_Id;
+	public int passengeId;
+	public String passengerName;
+	public String passengerNative;
+	public String passengerDeparture;
+	public String passengerArrival;
+	public int passengerAge;
+	public String passengerGender;
+	public int getPassengeId() {
+		return passengeId;
 	}
-	public void setPassenger_Id(int passenger_Id) {
-		this.passenger_Id = passenger_Id;
+	public void setPassengeId(int passengeId) {
+		this.passengeId = passengeId;
 	}
-	public String getPassenger_Name() {
-		return passenger_Name;
+	public String getPassengerName() {
+		return passengerName;
 	}
-	public void setPassenger_Name(String passenger_Name) {
-		this.passenger_Name = passenger_Name;
+	public void setPassengerName(String passengerName) {
+		this.passengerName = passengerName;
 	}
-	public String getPassenger_Native() {
-		return passenger_Native;
+	public String getPassengerNative() {
+		return passengerNative;
 	}
-	public void setPassenger_Native(String passenger_Native) {
-		this.passenger_Native = passenger_Native;
+	public void setPassengerNative(String passengerNative) {
+		this.passengerNative = passengerNative;
 	}
-	public String getPassenger_Departure() {
-		return passenger_Departure;
+	public String getPassengerDeparture() {
+		return passengerDeparture;
 	}
-	public void setPassenger_Departure(String passenger_Departure) {
-		this.passenger_Departure = passenger_Departure;
+	public void setPassengerDeparture(String passengerDeparture) {
+		this.passengerDeparture = passengerDeparture;
 	}
-	public String getPassenger_Arrival() {
-		return passenger_Arrival;
+	public String getPassengerArrival() {
+		return passengerArrival;
 	}
-	public void setPassenger_Arrival(String passenger_Arrival) {
-		this.passenger_Arrival = passenger_Arrival;
+	public void setPassengerArrival(String passengerArrival) {
+		this.passengerArrival = passengerArrival;
 	}
-	public int getPassenger_Age() {
-		return passenger_Age;
+	public int getPassengerAge() {
+		return passengerAge;
 	}
-	public void setPassenger_Age(int passenger_Age) {
-		this.passenger_Age = passenger_Age;
+	public void setPassengerAge(int passengerAge) {
+		this.passengerAge = passengerAge;
 	}
-	public String getPassenger_Gender() {
-		return passenger_Gender;
+	public String getPassengerGender() {
+		return passengerGender;
 	}
-	public void setPassenger_Gender(String passenger_Gender) {
-		this.passenger_Gender = passenger_Gender;
+	public void setPassengerGender(String passengerGender) {
+		this.passengerGender = passengerGender;
 	}
 	
 }

@@ -47,4 +47,24 @@ public class passengerController {
 			pserve.deleteInfo(passengerId);
 			return "Passenger ID " +passengerId+" is deleted";
 		}
+		@GetMapping("/sort/{name}")
+		public List<passengerModel> sortasc(@PathVariable("name") String id)
+		{
+			return pserve.sortDesc(id);
+		}
+		@GetMapping("/sort1/{name}")
+		public List<passengerModel> sortasc1(@PathVariable("name") String id)
+		{
+			return pserve.sortDesc1(id);
+		}
+		@GetMapping("/pagination/{id}/{id1}")
+		public List<passengerModel> pagination(@PathVariable("id")int id,@PathVariable("id1")int id1)
+		{
+			return pserve.paginationData(id,id1);
+		}
+		@GetMapping("/paginationandsort/{id}/{id1}/{name}")
+		public List<passengerModel> paginationAndSorting(@PathVariable("id")int id,@PathVariable("id1")int id1,@PathVariable("name")String name)
+		{
+			return pserve.paginationAndSorting(id,id1,name);
+		}
 }
